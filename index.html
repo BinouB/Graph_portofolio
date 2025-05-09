@@ -12,11 +12,14 @@
     a:hover{text-decoration:underline;}
 
     /* Layout */
-    header{background:#2e3141;color:#fff;padding:2rem 1rem;text-align:center;}
-    header h1{font-size:2.25rem;margin-bottom:0.25rem;}
+    header{background:#2e3141;color:#fff;padding:2rem 1rem;text-align:center;display:flex;flex-direction:column;align-items:center;}
+    header h1{font-size:2.25rem;margin:0.5rem 0 0.25rem;}
     header p{font-size:1rem;opacity:.9;}
     nav{margin-top:1rem;}
     nav a{color:#fff;margin:0 0.75rem;font-weight:500;}
+
+    /* Profile Image */
+    .profile{width:130px;height:130px;border-radius:50%;object-fit:cover;box-shadow:0 4px 10px rgba(0,0,0,.3);}    
 
     section{padding:2.5rem 1rem;max-width:800px;margin:auto;}
     section:nth-of-type(even){background:#ffffff;}
@@ -35,6 +38,7 @@
 </head>
 <body>
   <header>
+    <img src="https://github.com/BinouB/Graph_portofolio/blob/main/BF%20Photo.jpg?raw=true" alt="Bintou FALL profile photo" class="profile" />
     <h1>Bintou FALL</h1>
     <p>Biologist • Generative AI Enthusiast</p>
     <nav>
@@ -47,19 +51,19 @@
   <main>
     <section id="about-me">
       <h2>About Me</h2>
-      <p>I am a biologist based in Dakar, Senegal, with experience in molecular diagnostics and infectious diseases research. Currently, I contribute to the SEN‑B project at CHNU Fann, where I manage laboratory workflows, coordinate cross‑disciplinary teams, and co‑author scientific publications. My academic background spans a Professional Master's in Biological Analysis from IPE and a Bachelor's in Life and Earth Sciences from Cheikh Anta Diop University.</p>
+      <p>I am a biologist based in Dakar, Senegal, with experience in molecular diagnostics and infectious diseases research. Currently, I contribute to the SEN-B project at CHNU Fann, where I manage laboratory workflows, coordinate cross-disciplinary teams, and co-author scientific publications. My academic background spans a Professional Master's in Biological Analysis from IPE and a Bachelor's in Life and Earth Sciences from Cheikh Anta Diop University.</p>
       <p>Curious about the intersection of biology and technology, I am now exploring Generative AI to accelerate data analysis, automate routine tasks, and communicate science more effectively.</p>
     </section>
 
     <section id="about-course">
       <h2>About the Course</h2>
-      <p><strong>Generative AI for Work &amp; Research Productivity</strong> is an 8‑week, live online certification that teaches no‑code AI tools to streamline document creation, data analysis, and task automation.</p>
+      <p><strong>Generative AI for Work &amp; Research Productivity</strong> is an 8-week, live online certification that teaches no-code AI tools to streamline document creation, data analysis, and task automation.</p>
       <ul>
         <li>Automate documents, spreadsheets, and data workflows</li>
         <li>Organize knowledge and perform literature reviews with AI</li>
         <li>Develop custom chatbots and RAG systems</li>
         <li>Create visuals and presentations for outreach</li>
-        <li>Build an end‑to‑end AI solution in a capstone project</li>
+        <li>Build an end-to-end AI solution in a capstone project</li>
       </ul>
       <p><em>Next cohort starts&nbsp;May&nbsp;9,&nbsp;2025 &bull; Live workshops on Fridays or Sundays &bull; Tuition&nbsp;$250/mo for&nbsp;2&nbsp;months</em></p>
     </section>
