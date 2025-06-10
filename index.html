@@ -1,92 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Bintou FALL – Generative AI for Work & Research Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bintou FALL – Generative AI for Work &amp; Research Portfolio</title>
   <style>
-    /* Reset & Base Styles */
-    *,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
-    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.6;background:#f5f5f9;color:#333;}
-    a{color:#1a4bff;text-decoration:none;}
-    a:hover{text-decoration:underline;}
+    :root {
+      --primary: #0d47a1;
+      --text: #222;
+      --bg: #fff;
+    }
 
-    /* Layout */
-    header{background:#2e3141;color:#fff;padding:2rem 1rem;text-align:center;display:flex;flex-direction:column;align-items:center;}
-    header h1{font-size:2.25rem;margin-bottom:0.5rem;}
-    header .profile{width:150px;height:150px;border-radius:50%;object-fit:cover;border:4px solid #fff;margin-bottom:0.75rem;}
-    header p{font-size:1rem;opacity:.9;margin-bottom:0.75rem;}
-    nav{margin-top:0.25rem;}
-    nav a{color:#fff;margin:0 0.75rem;font-weight:500;}
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.6;
+      color: var(--text);
+      background: var(--bg);
+    }
 
-    section{padding:2.5rem 1rem;max-width:800px;margin:auto;}
-    section:nth-of-type(even){background:#ffffff;}
-    section:nth-of-type(odd){background:#f0f1f5;}
-    section h2{margin-bottom:1rem;font-size:1.75rem;color:#2e3141;}
+    header {
+      background: var(--primary);
+      color: #fff;
+      padding: 1rem 2rem;
+    }
 
-    ul{list-style:disc;padding-left:1.25rem;}
-    footer{background:#2e3141;color:#fff;text-align:center;padding:1rem;font-size:.875rem;}
+    header h1 {
+      margin: 0;
+      font-size: 1.75rem;
+    }
 
-    /* Responsive Tweaks */
-    @media(min-width:600px){
-      header h1{font-size:2.5rem;}
-      nav a{margin:0 1rem;}
+    nav {
+      margin-top: 0.5rem;
+    }
+
+    nav a {
+      color: #fff;
+      margin-right: 1rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 2rem;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    section:nth-child(even) {
+      background: #f5f5f5;
+    }
+
+    ul.submissions {
+      list-style: none;
+      padding: 0;
+    }
+
+    ul.submissions li {
+      margin: 0.5rem 0;
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #eee;
+      font-size: 0.875rem;
+    }
+
+    iframe {
+      width: 100%;
+      border: none;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Bintou FALL</h1>
-    <img src="https://github.com/BinouB/Graph_portofolio/blob/main/BF%20Photo.jpg?raw=true" alt="Bintou FALL profile photo" class="profile">
-    <p>Biologist • Generative AI Enthusiast</p>
     <nav>
-      <a href="#about-me">About Me</a>
-      <a href="#about-course">About the Course</a>
-      <a href="#weekly-submissions">Weekly Submissions</a>
+      <a href="#about-me">About me</a>
+      <a href="#about-course">About the course</a>
+      <a href="#submissions">Weekly submissions</a>
+      <a href="#consultation">Contact for Consultation</a>
     </nav>
   </header>
 
   <main>
     <section id="about-me">
-      <h2>About Me</h2>
-      <p>I am a biologist based in Dakar, Senegal, with experience in molecular diagnostics and infectious diseases research. Currently, I contribute to the SEN-B project at CHNU Fann, where I manage laboratory workflows, coordinate cross-disciplinary teams, and co-author scientific publications. My academic background spans a Professional Master's in Biological Analysis from IPE and a Bachelor's in Life and Earth Sciences from Cheikh Anta Diop University.</p>
-      <p>Curious about the intersection of biology and technology, I am now exploring Generative AI to accelerate data analysis, automate routine tasks, and communicate science more effectively.</p>
+      <h2>About me</h2>
+      <p>I am a biologist based in Dakar, Senegal, with experience in molecular diagnostics and infectious diseases research. Currently, I contribute to the SEN‑B project at CHNU Fann, where I manage laboratory workflows, coordinate cross‑disciplinary teams, and co‑author scientific publications.</p>
+      <p>Curious about the intersection of biology and technology, I am exploring Generative AI to accelerate data analysis, automate routine tasks, and communicate science more effectively.</p>
     </section>
 
     <section id="about-course">
-      <h2>About the Course</h2>
-      <p><strong>Generative AI for Work &amp; Research Productivity</strong> is an 8-week, live online certification that teaches no-code AI tools to streamline document creation, data analysis, and task automation.</p>
+      <h2>About the course</h2>
+      <p><strong>Generative AI for Work &amp; Research Productivity</strong> is an 8‑week, live online certification that teaches no‑code AI tools to streamline document creation, data analysis, and task automation.</p>
       <ul>
         <li>Automate documents, spreadsheets, and data workflows</li>
         <li>Organize knowledge and perform literature reviews with AI</li>
-        <li>Develop custom chatbots and RAG systems</li>
+        <li>Develop custom chatbots and Retrieval‑Augmented Generation systems</li>
         <li>Create visuals and presentations for outreach</li>
-        <li>Build an end-to-end AI solution in a capstone project</li>
+        <li>Build an end‑to‑end AI solution in a capstone project</li>
       </ul>
-      <p><em>Next cohort starts&nbsp;May&nbsp;9,&nbsp;2025 &bull; Live workshops on Fridays or Sundays &bull; Tuition&nbsp;$250/mo for&nbsp;2&nbsp;months</em></p>
+      <p><em>Next cohort starts May 9 2025 • Live workshops on Fridays or Sundays • Tuition $250/mo for 2 months</em></p>
     </section>
 
-    <section id="weekly-submissions">
-      <h2>My Weekly Submissions</h2>
+    <section id="submissions">
+      <h2>My weekly submissions</h2>
       <p>The links below will be activated as the course progresses:</p>
-      <ul>
-        <li>Week&nbsp;1 – <a href="#">Coming soon</a></li>
-        <li>Week&nbsp;2 – <a href="#">Coming soon</a></li>
-        <li>Week&nbsp;3 – <a href="#">Coming soon</a></li>
-        <li>Week&nbsp;4 – <a href="#">Coming soon</a></li>
-        <li>Week&nbsp;5 – <a href="#">Coming soon</a></li>
-        <li>Week&nbsp;6 – <a href="#">Coming soon</a></li>
-        <li>Week&nbsp;7 – <a href="#">Coming soon</a></li>
-        <li>Week&nbsp;8 – <a href="#">Coming soon</a></li>
+      <ul class="submissions">
+        <li>Week 1 – Coming soon</li>
+        <li>Week 2 – Coming soon</li>
+        <li>Week 3 – Coming soon</li>
+        <li>Week 4 – Coming soon</li>
+        <li>Week 5 – Coming soon</li>
+        <li>Week 6 – Coming soon</li>
+        <li>Week 7 – Coming soon</li>
+        <li>Week 8 – Coming soon</li>
       </ul>
+    </section>
+
+    <section id="consultation">
+      <h2>Contact for Consultation</h2>
+      <p>If you’d like to discuss how Generative AI can accelerate your research or workflow, please fill out the form below and I’ll get back to you.</p>
+      <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeaGkbwZ735rwMWtouWoMT22p-ZVOYsNeGq33u-pOQmSkY4Pw/viewform?embedded=true" height="776" loading="lazy">Loading…</iframe>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Bintou FALL</p>
+    © 2025 Bintou FALL
   </footer>
- <script src="https://cdn.botpress.cloud/webchat/v2.4/inject.js"></script>
-<script src="https://files.bpcontent.cloud/2025/06/02/10/20250602104323-BT7Q6XB8.js"></script>
 </body>
 </html>
+
 
