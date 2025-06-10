@@ -14,7 +14,8 @@
     /* Layout */
     header{background:#2e3141;color:#fff;padding:2rem 1rem;text-align:center;display:flex;flex-direction:column;align-items:center;}
     header h1{font-size:2.25rem;margin-bottom:0.5rem;}
-    header .profile{width:150px;height:150px;border-radius:50%;object-fit:cover;border:4px solid #fff;margin-bottom:0.75rem;}
+    header .profile{width:150px;height:150px;border-radius:50%;object-fit:cover;border:4px solid #fff;margin-bottom:0.75rem;transition:transform 0.2s ease;}
+    header .profile:hover{transform:scale(1.05);}    
     header p{font-size:1rem;opacity:.9;margin-bottom:0.75rem;}
     nav{margin-top:0.25rem;}
     nav a{color:#fff;margin:0 0.75rem;font-weight:500;}
@@ -39,7 +40,9 @@
 <body>
   <header>
     <h1>Bintou FALL</h1>
-    <img src="https://github.com/BinouB/Graph_portofolio/blob/main/BF%20Photo.jpg?raw=true" alt="Bintou FALL profile photo" class="profile">
+    <a href="https://github.com/BinouB/Graph_portofolio/blob/main/WhatsApp%20Image%202025-05-21%20%C3%A0%2018.46.08_a88f2965.jpg?raw=true" target="_blank" aria-label="Open full-size profile photo in new tab">
+      <img src="https://github.com/BinouB/Graph_portofolio/blob/main/WhatsApp%20Image%202025-05-21%20%C3%A0%2018.46.08_a88f2965.jpg?raw=true" alt="Bintou FALL profile photo" class="profile">
+    </a>
     <p>Biologist • Generative AI Enthusiast</p>
     <nav>
       <a href="#about-me">About Me</a>
